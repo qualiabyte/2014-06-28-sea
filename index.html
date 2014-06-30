@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Seascapes</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="processing.js"></script>
+        <script type="text/javascript" src="coffee-script.js"></script>
+        <script type="text/processing" data-processing-target="pjs">
+            void setup() {
+                size(600, 400);
+                background(random(0,50), random(0,50), random(50, 255));
+                stroke(255);
+                println("seascapes~!");
+            }
+        </script>
+        <canvas id="pjs">
+        </canvas>
+    </body>
+</html>
